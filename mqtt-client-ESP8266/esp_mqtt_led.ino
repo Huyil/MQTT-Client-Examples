@@ -21,6 +21,8 @@ PubSubClient client(espClient);
 void setup() {
     // Set software serial baud to 115200;
     Serial.begin(115200);
+    //Set LED_Pin Mode
+    pinMode(LED, OUTPUT);
     // connecting to a WiFi network
     WiFi.begin(ssid, password);
     while (WiFi.status() != WL_CONNECTED) {
